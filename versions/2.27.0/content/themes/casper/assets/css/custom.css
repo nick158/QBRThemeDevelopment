@@ -1,0 +1,40 @@
+body,
+h1, h2, h3, h4, h5, h6,
+.subscribe-button,
+.page-title,
+.read-next-story .post:before,
+.pagination,
+.site-footer {
+    font-family: "Baskerville Oldface", "Libre Baskerville", serif;
+}
+.post-full-meta, .nav,
+.post-card-tags, .reading-time,
+.site-description, .site-footer{
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+
+}
+
+/*Changing the appearances of links in the article*/
+.post-full-content a {
+    color: #000;
+    word-break: break-word;
+    -webkit-box-shadow: #3eb0ef 0 -1px 0 inset;
+    box-shadow: inset 0 -1px 0 #51A3A3;
+    display: inline-block;
+    background: linear-gradient(to right, #51a3a3 50%, white 50%);
+    background-size: 200% 100%;
+    background-position:right bottom;
+    transition: all 200ms ease;
+  }
+.post-full-content a:hover{
+  background-color: #51A3A3;
+  color: white;
+  transition: all 200ms ease;
+  background-position: left bottom;
+}
+
+.post-full-content .a:hover::after { height: 1.15em; }
+/* This is necessary to not mess up share icons at bottom of posts */
+[class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: "casper-icons", "Open Sans", sans-serif;
+}
