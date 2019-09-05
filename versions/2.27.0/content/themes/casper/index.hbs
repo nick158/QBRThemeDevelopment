@@ -18,11 +18,22 @@ into the {body} of the default.hbs template --}}
     </div>
 </header>
 
-{{!-- The main content area --}}
+{{!-- The main content area, first part implements featured posts to top --}}
 <main id="site-main" class="site-main outer">
     <div class="inner">
 
         <div class="post-feed">
+          {{^is "paged"}}
+              {{#get "posts" filter="featured:true" limit="all"}}
+                  {{#if posts}}
+                      {{#foreach posts}}
+
+                        {{> "post-card"}}
+
+                      {{/foreach}}
+                  {{/if}}
+              {{/get}}
+          {{/is}}
             {{#foreach posts}}
 
                 {{!-- The tag below includes the markup for each post - partials/post-card.hbs --}}
