@@ -48,6 +48,7 @@ into the {body} of the default.hbs template --}}
                 <div class="post-content">
                     {{content}}
                 </div>
+                <p class="comment-call animated pulse slow delay-2s infinite">Do you agree with the article? Disagree? Leave an anonymous comment below! 👇</p>
             </section>
 
             {{!-- Email subscribe form at the bottom of the page --}}
@@ -74,12 +75,16 @@ into the {body} of the default.hbs template --}}
                 {{/has}}
 
             </footer>
+
+            <section class="post-full-comments">
+              <div id="commento"></div>
+            </section>
             <!-- Begin Mailchimp Signup Form -->
 
             <section id="mc_embed_signup" class="subscribe-form">
             <form action="https://gmail.us4.list-manage.com/subscribe/post?u=53aceeeec26de295f593cdbb7&amp;id=2d46b5ff63" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
                 <div id="mc_embed_signup_scroll">
-              <h3 for="mce-EMAIL" class="subscribe-form-title">Ready to expand your horizons? </h3>
+              <h3 for="mce-EMAIL" class="subscribe-form-title">Ready to expand your horizons? Subscribe for more thought-provoking opinion pieces.</h3>
               <br />
               <input type="email" value="" name="EMAIL" class="email-subscribe" id="mce-EMAIL" placeholder="youremail@example.com" required>
                 <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
@@ -92,10 +97,6 @@ into the {body} of the default.hbs template --}}
                 </div>
             </form>
           </section>
-            <section class="post-full-comments">
-              <div id="commento"></div>
-            </section>
-
         </article>
 
     </div>

@@ -57,8 +57,20 @@ h1, h2, h3, h4, h5, h6,
 .site-logo{
   max-height: 200px;
 }
+/* pseudo after element that indicates scroll */
+
 .post-full-content .a:hover::after { height: 1.15em; }
 /* This is necessary to not mess up share icons at bottom of posts */
 [class^="icon-"]:before, [class*=" icon-"]:before {
   font-family: "casper-icons", "Open Sans", sans-serif;
+}
+
+/*subscribe form title font size changes*/
+.subscribe-form-title{
+  font-size: 20px;
+}
+/*comment call to actions */
+.comment-call{
+  font-weight: bold;
+  font-size: 30px !important;
 }
